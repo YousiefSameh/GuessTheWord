@@ -1,0 +1,75 @@
+.guess-game .inputs > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.guess-game .inputs > div span {
+  font-size: 30px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.guess-game .inputs input {
+  margin: 0 5px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 50px;
+  caret-color: #f44336;
+  background-color: white;
+  border: none;
+  border-bottom: 3px solid #333;
+}
+
+.guess-game .inputs input:focus {
+  outline-color: #CCCCCC;
+}
+
+.guess-game .inputs input.yes-in-place {
+  background-color: #f89e13;
+  border-color: #f89e13;
+  color: white;
+}
+
+.guess-game .inputs input.not-in-place {
+  background-color: #18ba89;
+  border-color: #18ba89;
+  color: white;
+}
+
+.guess-game .inputs input.no {
+  background-color: #27303f;
+  border-color: #27303f;
+  color: white;
+}
+
+.guess-game .inputs .disabled-inputs {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.guess-game .message span {
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+  color: #f44336;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.guess-game .message p {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 586px) and (min-width: 300px) {
+  .guess-game .inputs input {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+  }
+  .guess-game .inputs > div span {
+    font-size: 20px;
+  }
+}

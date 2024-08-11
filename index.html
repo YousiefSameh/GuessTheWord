@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/CSS/style.css">
+    <link rel="stylesheet" href="dist/CSS/index.css">
+		<title></title>
+	</head>
+	<body class="m-0 p-0 bg-bgcolor font-primary">
+    <h1 class="text-4xl font-bold text-center p-5 mb-12 bg-white"></h1>
+    <main class="guess-game text-center w-full lg:w-1000 my-5 mx-auto flex flex-col lg:flex-row lg:items-start justify-center lg:justify-between p-5 pb-20">
+      <div class="game-area">
+        <div class="inputs"></div>
+        <div class="control flex justify-center items-center w-full my-8 mx-auto gap-2.5">
+          <button class="check border-none text-xl md:text-2xl py-2 px-2.5 md:py-4 md:px-5 rounded-lg text-white cursor-pointer font-bold disabled:bg-black disabled:opacity-40 disabled:cursor-no-drop bg-primary flex-1">Check Word</button>
+          <button class="hint border-none text-xl md:text-2xl py-2 px-2.5 md:py-4 md:px-5 rounded-lg text-white cursor-pointer font-bold disabled:bg-black disabled:opacity-40 disabled:cursor-no-drop bg-customGreen w-fit">Hints <span></span></button>
+          <button class="reset border-none text-xl md:text-2xl py-2 px-2.5 md:py-4 md:px-5 rounded-lg text-white cursor-pointer font-bold disabled:bg-black disabled:opacity-40 disabled:cursor-no-drop bg-customYellow w-fit">Reset</button>
+        </div>
+        <div class="message text-center font-bold text-3xl my-5 lg:my-0"></div>
+      </div>
+      <div class="key-colors">
+        <h2 class="text-5xl font-bold mb-10">Key Colors</h2>
+        <div class="key-color flex items-center p-4 bg-white mb-4">
+          <div class="key w-8 h-8 rounded-full mr-3 in-place bg-customYellow"></div>
+          <div class="key-word text-xl font-bold">Letter Is Correct And In Place</div>
+        </div>
+        <div class="key-color flex items-center p-4 bg-white mb-4">
+          <div class="key w-8 h-8 rounded-full mr-3 not-in-place bg-customGreen"></div>
+          <div class="key-word text-xl font-bold">Letter Is Correct But Not In Place</div>
+        </div>
+        <div class="key-color flex items-center p-4 bg-white mb-4">
+          <div class="key w-8 h-8 rounded-full mr-3 no bg-customBlue"></div>
+          <div class="key-word text-xl font-bold">Letter Is Wrong</div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center p-5 fixed bottom-0 left-0 w-full bg-customBlue text-white font-bold"></footer>
+    <script src="dist/JS/main.js"></script>
+  </body>
+</html>
