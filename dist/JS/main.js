@@ -107,6 +107,8 @@ function handleGuesses() {
     // Disable Guess Button
     guessButton.disabled = true
     hintButton.disabled = true;
+    resetButton.disabled = true;
+    
   } else {
     document.querySelector(`.try-${currentTry}`).classList.add("disabled-inputs");
     const currentTryInputs = document.querySelectorAll(`.try-${currentTry} input`);
@@ -121,6 +123,7 @@ function handleGuesses() {
     } else {
       guessButton.disabled = true;
       hintButton.disabled = true;
+      resetButton.disabled = true;
       messageArea.innerHTML = `<p>Game Over The Word Is <span>${wordToGuess}</span></p>`;
     }
   }
